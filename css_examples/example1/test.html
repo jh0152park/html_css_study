@@ -3,10 +3,31 @@
   <hdad>
     <title>HTML Study</title>
     <style>
+      html {
+        background-color: beige;
+      }
+      body {
+        background-color: black;
+        margin: 20px;
+        padding: 20px;
+      }
       div {
+        padding: 15px;
+      }
+      #first {
         height: 150px;
-        width: 250px;
+        width: 150px;
         background-color: yellowgreen;
+      }
+      #second {
+        height: 120px;
+        width: 120px;
+        background-color: yellow;
+      }
+      #third {
+        height: 90px;
+        width: 90px;
+        background-color: aqua;
       }
       span {
         background-color: aqua;
@@ -14,15 +35,10 @@
     </style>
   </hdad>
   <body>
-    <div>
-      <span>TEST1</span>
-      <span>TEST1</span>
-      <span>TEST1</span>
+    <div id="first">
+      <div id="second">
+        <div id="third"></div>
+      </div>
     </div>
-    <div></div>
-    <div></div>
-    <span>Hello</span>
-    <span>Hello</span>
-    <span>Hello</span>
   </body>
 </html>
