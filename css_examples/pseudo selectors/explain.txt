@@ -1,0 +1,30 @@
+id를 기준으로 어떠한 tag에 값을 부여하고 싶다면 #id이름을 하게되고
+class를 기준으로 한다면 .class이름 으로 하게된다.
+
+하지만 다른 방법으로 좀 더 복잡하게 선택해야할 일이 생길 수 있다!
+이때 수도 셀렉터(pseudo selector)
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: darkorange;
+}
+
+div:nth-child(2n) {
+    background-color: teal;
+}
+
+이렇게 코드를 작성하면 2번째 마다 오는 div들의 색상을 바꿔줄 수 있음!
+class나 id를 새로 만들면 html코드를 건들여야 하지만, 이렇게하면 css코드만 수정하면 되니까 더 좋은 방법임
+
+저것 외에도 last-child, first-child 등등이 있다
+
+odd는 홀수, 이러면 홀수번째 위치한 태그들에 해당함
+span:nth-child(odd) {
+            background-color: yellowgreen;
+        }
+
+이러면 짝수!
+span:nth-child(even) {
+            background-color: yellowgreen;
+        }
