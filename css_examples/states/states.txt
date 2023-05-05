@@ -14,3 +14,42 @@ visited
 
 focus-within
 이거는 부모 태그한테 적용이 됨
+포커스된 자식을 가진 부모 엘리먼트에게 적용이 됨
+요로코롬 작성하면, form은 부모이고 input 3개는 자식이 되는데
+
+자식 중 한놈이라도 포커스가 되면, 포커스윗인 즉 테두리 컬러가 살몬에서 초록색으로 변함!
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        form:focus-within {
+            border-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </form>
+</body>
+
+</html>
+
+##########################################
+그리고 아래처럼 여러개의 속성을 연결해서 쓸 수 있음!!
+form:hover input:focus {
+            background-color: seagreen;
+        }

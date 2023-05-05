@@ -1,0 +1,15 @@
+css로 display: flex를 주면 화면 크기에 맞춰서 알아서 가로로 배치를 해주고
+flxe-direction: column을 하면 default은 가로에서 세로로 착착착 알아서 맞춰줌
+
+div나 span이나 input을 여러개 사용하면 딱딱 안맞고 공간이 생기는데,
+display: flex를 쓰면 착! 맞춰줌
+
+번외로 display: inline을 쓰면 div인 box들이 세로가 아닌 가로로 챡챡챡 들어감
+display: box 하면 가로로 들어가는 span들이 세로로 들어감
+근데 이거는 <span></span> 하고 new line같은 <br>을 붙여주면 되는거같음
+
+form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+        }
