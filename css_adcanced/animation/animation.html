@@ -4,20 +4,43 @@
 
 <head>
     <style>
-        @keyframes coinFlip {
+        /* @keyframes coinFlip {
             from {
-                transform: rotateX(0);
+                transform: rotateY(0);
             }
 
             to {
-                transform: rotateX(360deg);
+                transform: rotateY(360deg) translateX(100px);
             }
+        } */
+        @keyframes coinFlip {
+            0% {
+                transform: rotateX(0);
+            }
+
+            50% {
+                transform: rotateX(360deg) translateY(100px);
+                border-radius: 0%;
+                border-color: tomato;
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotateX(0deg);
+            }
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         img {
             border: 2px solid black;
             border-radius: 50%;
-            animation: coinFlip 1s linear infinite;
+            animation: coinFlip 3s linear infinite;
         }
     </style>
 </head>
