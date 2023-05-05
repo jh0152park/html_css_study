@@ -1,0 +1,18 @@
+media query는 오직 css만 이용해서 스크린의 사이즈를 알 수 있는 방법임, 웹사이트를 보고있는 사용자의 화면
+
+사용자에 따라서 핸드폰으로도 보고, 큰 모니터로도 볼 수 있는데, CSS만으로 이 화면 크기를 얻어올 수 있음
+이를 media query라고 부름.
+
+# 코드를 아래와 같이 작성하면, 현재 화면이 500px보다 작으면, 아래 부분을 수행해라 라는 의미임
+@media screen and (max-width: 500px) {
+}
+
+
+# 코드를 아래와 같이 작성하면, 화면이 600~700px에 해당할때만 아래 부분이 수행됨, 올ㅋ
+@media screen and (min-width: 600px) and (max-width: 700px) {
+            
+}
+
+orientation: landscape 이거는 핸드폰에서 가로모드를 사용하는지를 감지하는 기능임
+
+
