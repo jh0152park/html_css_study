@@ -1,0 +1,24 @@
+position: static은 레이아웃이 박스를 처음 위치하는 곳에 두는 것
+
+position: relative는 가끔씩 유용한데, 오른쪽 왼쪽으로 조금씩만 움직이고 싶을때 사용, 저러면 위로 10 왼쪽으로 10 이동함
+즉 처음 위치를 기준으로 위치를 지정한 만큼 움직이는 것임
+.green {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -10px;
+            left: -10px;
+        }
+
+position: absolute는 top left bottom right를 쓰고싶을때 사용할 수 있음
+근데 신기한건 좌표가 div(box)를 기준으로 하는것이 아니라 body를 기준으로함!
+쉽게말해서 화면의 왼쪽상단을 기준으로 움직임(절대좌표 0,0에서 움직이는 느낌?)
+.green {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+        }        
