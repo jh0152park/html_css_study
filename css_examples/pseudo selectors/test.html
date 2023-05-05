@@ -5,30 +5,31 @@
 <head>
     <title>Test</title>
     <style>
-        div {
-            width: 50px;
-            height: 50px;
-            background-color: darkorange;
-        }
-
         span {
-            font-size: 20px;
-            background-color: yellow;
+            color: tomato;
+            background-color: teal;
+            padding: 5px;
+            border-radius: 10px;
         }
 
-        span:nth-child(even) {
-            background-color: yellowgreen;
+        p span {
+            color: white;
+        }
+
+        p+span {
+            color: yellowgreen;
         }
     </style>
 </head>
 
 <body>
-    <span>Hello</span>
-    <span>Hello</span>
-    <span>Hello</span>
-    <span>Hello</span>
-    <span>Hello</span>
-    <span>Hello</span>
+    <div>
+        <p>
+            Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Quod commodi e
+            sequi issam odio dolorem. <span>inside</span>
+        </p>
+        <span>hello</span>
+    </div>
 </body>
 
 </html>

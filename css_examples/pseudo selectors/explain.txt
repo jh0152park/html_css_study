@@ -28,3 +28,31 @@ span:nth-child(odd) {
 span:nth-child(even) {
             background-color: yellowgreen;
         }
+
+
+<body>
+    <span>hello</span>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi e
+        sequi issam odio dolorem. <span>inside</span>
+    </p>
+</body>
+위에 처럼 p 태그안에 span태그가 있을 때, 해당 tag에 속성값을 주고 싶으면 아래와 같이 하면 됨
+p span {
+            color: teal;
+        }
+p내부에 있는 span에는 모두 적용 되므로, 중복 적용임!
+
+
+> 이 표시는 다이렉트 칠드런을 의미함!
+즉 바로 부모div 아래에 span이라는 자식 tag에만 적용되는 속성을 정의할 수 있음
+
+div>span {
+            text-decoration: underline;
+        }
+
+
++ 이 표시는, next라는 의미로 p tag 다음에 오는 span을 의미함! (sibling 형제를 찾는거임)
+p+span {
+            color: yellowgreen;
+        }
