@@ -1,3 +1,7 @@
+###########################
+##### Pseudo Selector #####
+###########################
+
 id를 기준으로 어떠한 tag에 값을 부여하고 싶다면 #id이름을 하게되고
 class를 기준으로 한다면 .class이름 으로 하게된다.
 
@@ -29,6 +33,30 @@ span:nth-child(even) {
             background-color: yellowgreen;
         }
 
+#########################################################
+아래처럼 html 코드가 작성되어 있다고 할때
+<form>
+    <input type="text" placeholder="first name">
+    <input type="text" placeholder="last name">
+    <input type="password" required placeholder="password">
+</form>
+
+CSS코드를 이렇게 작성하면, input중에서 required를 갖고있는 태그
+그리고 input중에서 placeholder 중 name이라는걸 갖고있는 태그들을 선택할 수 있음!
+
+input:required {
+    border-color: tomato;
+} => 이거는 수도셀럭터 처럼 보이고
+
+input[placeholder~="name"] {
+    background-color: aquamarine;
+} => 이거는 어트리뷰트를 이용하는거같고 그럼
+
+
+
+######################
+##### Combinator #####
+######################
 
 <body>
     <span>hello</span>
@@ -42,7 +70,7 @@ p span {
             color: teal;
         }
 p내부에 있는 span에는 모두 적용 되므로, 중복 적용임!
-
+#########################################################
 
 > 이 표시는 다이렉트 칠드런을 의미함!
 즉 바로 부모div 아래에 span이라는 자식 tag에만 적용되는 속성을 정의할 수 있음
@@ -50,9 +78,21 @@ p내부에 있는 span에는 모두 적용 되므로, 중복 적용임!
 div>span {
             text-decoration: underline;
         }
-
+#########################################################
 
 + 이 표시는, next라는 의미로 p tag 다음에 오는 span을 의미함! (sibling 형제를 찾는거임)
+무조건 p바로 다음으로 오는 span을 의미함
+그래서 p -> div -> span 이런식이면, 통하지 않음. 무조건 p -> span이어야함
 p+span {
             color: yellowgreen;
         }
+
+하지만 p~span 이렇게 사용하면, 바로 다음으로 위치하지 않더라도 사용할 수 있음
+즉 p -> div -> span 이런 구조이지만, 사용이 가능하단 소리임
+
++ => have to next sibling
+~ => any next sibling
+
+
+
+

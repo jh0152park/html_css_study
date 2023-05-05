@@ -5,30 +5,28 @@
 <head>
     <title>Test</title>
     <style>
-        span {
-            color: tomato;
-            background-color: teal;
-            padding: 5px;
-            border-radius: 10px;
+        input {
+            border: 1px solid wheat
         }
 
-        p span {
-            color: white;
+        input:required {
+            border-color: tomato;
         }
 
-        p+span {
-            color: yellowgreen;
+        input[placeholder^="first"] {
+            background-color: aquamarine;
         }
     </style>
 </head>
 
 <body>
     <div>
-        <p>
-            Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Quod commodi e
-            sequi issam odio dolorem. <span>inside</span>
-        </p>
-        <span>hello</span>
+        <form>
+            <input type="text" placeholder="first name">
+            <input type="text" placeholder="last name">
+            <input type="text" placeholder="first name2">
+            <input type="password" required placeholder="password">
+        </form>
     </div>
 </body>
 
