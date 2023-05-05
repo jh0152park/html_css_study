@@ -21,4 +21,10 @@ RGBA (Alpha)
 이는 굉장히 쿨하지 못함!
 
 그래서 :root라고 불리는 element에 변수를 추가할 수 있음
+먼저 CSS에서 변수는 --두번 그리고 변수이름, 공백은 무조건 -로 채워야 한다
+--main-color / --name-of-human 이런식으로.
 
+그리고 변수를 사용하는 방법은 var(변수이름) 이런식으로 사용하면 된다.
+background-color: var(--main-color)
+
+이를 css custom properties 라고함!
