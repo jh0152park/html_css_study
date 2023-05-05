@@ -1,2 +1,6 @@
 transition은 기본적으로 어떠한 상태에서 다른 상태로 변화를 애니메이션으로 만드는 방법임
-transition이라는 속성은 state가 없는 쪽에 사용해야함 (hoover, focus 등등)
+
+transition이라는 속성은 state가 없는 쪽에 사용해야함 (hoover, focus 등등) 굉장히 중요함!
+
+transition은 state에 따라 바뀌는 property를 갖고있으면 사용할 수 있음
+그리고 state를 갖고있는 css와 그게 없는 root css에서 모두 선언이 되어야 적용될 수 있음
