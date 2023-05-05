@@ -53,3 +53,35 @@ focus-within
 form:hover input:focus {
             background-color: seagreen;
         }
+#################################
+
+p::selection {
+            background-color: yellow;
+        }
+
+selection은 문자열을 드래그할때(블록잡힐때) 색깔을 바꿀 수 있음
+예를 들어 디폴트가 파란색이라면, 노란색으로 바꿀 수 있음! 하이라이트기능?
+
+
+###########################################
+p::first-letter {
+            font-size: 50px;
+            color: white;
+            background-color: yellow;
+        }
+이거는 문자의 맨 앞글자만 대문자로 바꿔주는 기능!
+번외로 first-line은 첫문장만 대문자로 바꿔줌!
+############################################
+    <style>
+        input::placeholder {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input placeholder="look at me" type="text" name="" id="">
+    </form>
+</body>
+이거는 input창에서 placeholder (맨처음 인풋창에 적혀있는 문자들)의 속성을 바꿔줌!
