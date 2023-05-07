@@ -34,7 +34,7 @@
 
 .suggenstion_icons {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .suggenstion_icons_icon {
@@ -42,11 +42,12 @@
   align-items: center;
   flex-direction: column;
   display: flex;
+  margin-right: 55px;
 }
 
 .suggenstion_icons_icon img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
