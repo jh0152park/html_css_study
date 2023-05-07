@@ -28,7 +28,7 @@
 
 .recommend-friend span {
   color: rgba(0, 0, 0, 0.5);
-  margin: 120px 0px;
+  margin: 135px 0px;
   display: block;
   text-align: center;
   font-size: 18px;
@@ -42,7 +42,7 @@
 }
 
 .open-chat__header div {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .open-post {
@@ -109,9 +109,16 @@
   align-items: center;
   position: absolute;
   bottom: 10px;
-  right: 4px;
+  right: 10px;
+  font-size: 14px;
 }
 
 .open-post_like span {
   margin-left: 3px;
+}
+
+.open-post-bot-line {
+  border-bottom: var(--border-bottom);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
