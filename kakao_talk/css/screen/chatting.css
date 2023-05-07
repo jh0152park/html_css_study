@@ -1,0 +1,11 @@
+#chatting_screen {
+  background-color: #abc1d1;
+  height: 10000vh;
+}
+
+#chatting_screen .alt_header {
+  padding-top: 0px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
