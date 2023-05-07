@@ -8,6 +8,7 @@
 @import "components/alt_screen_header.css";
 @import "components/user_component.css";
 @import "components/chat_noti.css";
+@import "components/no_mobile.css";
 
 /* Screen */
 @import "screen/login.css";
