@@ -5,6 +5,7 @@
 @import "components/status_bar.css";
 @import "components/navigation.css";
 @import "components/screen_header.css";
+@import "components/alt_screen_header.css";
 @import "components/user_component.css";
 @import "components/chat_noti.css";
 
@@ -13,6 +14,7 @@
 @import "screen/friends.css";
 @import "screen/find.css";
 @import "screen/more.css";
+@import "screen/setting.css";
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

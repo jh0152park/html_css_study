@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends - KakaoTalk</title>
+    <title>More - KakaoTalk</title>
 </head>
 
 <body>
@@ -25,46 +25,52 @@
         </div>
     </div>
 
-    <header class="screen-header chat-screen">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
-            <span>
-                <!-- Search -->
-                <i class="far fa-search fa-lg"></i>
-            </span>
-            <span>
-                <!-- Add Chat -->
-                <i class="far fa-comment-medical fa-lg"></i>
-            </span>
-            <span>
-                <!-- Music -->
-                <i class="far fa-music fa-lg"></i>
-            </span>
-            <span>
-                <!-- Cog -->
-                <a href="setting.html">
-                    <i class="far fa-cog fa-lg"></i>
-                </a>
-            </span>
+    <header class="alt_header">
+        <div class="alt_header_column">
+            <a href="more.html">
+                <i class="far fa-chevron-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt_header_column">
+            <h1 class="alt_header_title">Setting</h1>
+        </div>
+        <div class="alt_header_column">
+            <i class="far fa-search fa-2x"></i>
         </div>
     </header>
 
     <main class="friends-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="friends_image/dog.jpeg"
-                    class="user-component__profile__picuture user-component__profile__picuture">
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Dog</h4>
-                    <h6 class="user-component__subtitle">Hey What's Up!!?</h6>
+        <ul class="setting_list">
+            <li class="setting_icon">
+                <div class="setting_icon_column">
+                    <i class="far fa-bullhorn"></i>
+                    <span>Notices</span>
                 </div>
-            </div>
-            <div class="user-component__column chat_item">
-                <span class="chat_time">21:22</span>
-                <div class="chat_noti">1</div>
-            </div>
-        </div>
+                <div class="setting_icon_column">
+
+                </div>
+            </li>
+            <li class="setting_icon">
+                <div class="setting_icon_column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kakao Lab</span>
+                </div>
+                <div class="setting_icon_column">
+
+                </div>
+            </li>
+            <li class="setting_icon">
+                <div class="setting_icon_column">
+                    <i class="far fa-info-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="setting_icon_column">
+                    Latest Version
+                </div>
+            </li>
+        </ul>
     </main>
+
 
     <nav class="nav">
         <ul class="nav__list">
@@ -79,8 +85,8 @@
                 <!-- Chats -->
                 <a class="nav__link" href="chat.html">
                     <span class="nav__noti">1</span>
-                    <!-- <i class="far fa-comment fa-2x"></i> -->
-                    <i class="fas fa-comment fa-2x"></i>
+                    <i class="far fa-comment fa-2x"></i>
+                    <!-- <i class="fas fa-comment fa-2x"></i> -->
                 </a>
             </li>
             <li class="nav__btn">
