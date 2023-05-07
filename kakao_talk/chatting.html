@@ -40,9 +40,56 @@
         </div>
     </header>
 
-    <main class="friends-screen">
+    <main class="friends-screen main_chat">
+        <div class="chat_timestamp">
+            Tuesday, June 30, 2020
+        </div>
 
+        <!-- 내가 받은 메세지 -->
+        <div class="message_row">
+            <img src="friends_image/dog.jpeg">
+            <div class="message_row_content">
+                <span class="message_author">Dog</span>
+                <div class="message_text">
+                    <span class="message_bubble">Hi!</span>
+                    <span class="message_time">21:27</span>
+                </div>
+            </div>
+        </div>
+        <div class="message_row">
+            <img src="friends_image/dog.jpeg">
+            <div class="message_row_content">
+                <span class="message_author">Dog</span>
+                <div class="message_text">
+                    <span class="message_bubble">Hi!</span>
+                    <span class="message_time">21:27</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 내가 보내는 메세지 -->
+        <div class="message_row message_row_own">
+            <div class="message_row_content">
+                <div class="message_text">
+                    <span class="message_bubble">Hey~ how is it going?</span>
+                    <span class="message_time">21:28</span>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <form class="reply">
+        <div class="reply_column">
+            <i class="far fa-plus-square"></i>
+        </div>
+        <div class="reply_column">
+            <input type="text" placeholder="Write a message...">
+            <i class="far fa-smile fa-lg"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
