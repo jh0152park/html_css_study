@@ -122,3 +122,21 @@
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+
+@keyframes heartbeat {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post_like:hover i {
+  /* color: pink; */
+  animation: heartbeat 1s linear infinite;
+}
