@@ -65,3 +65,7 @@
 .user-component__column > i {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.chat-screen {
+  margin-bottom: 20px;
+}

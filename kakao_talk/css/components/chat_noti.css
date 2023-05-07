@@ -1,0 +1,24 @@
+.chat_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.chat_noti {
+  color: white;
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.chat_time {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  display: block;
+}

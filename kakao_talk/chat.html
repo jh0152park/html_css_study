@@ -25,12 +25,16 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+    <header class="screen-header chat-screen">
+        <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
             <span>
                 <!-- Search -->
                 <i class="far fa-search fa-lg"></i>
+            </span>
+            <span>
+                <!-- Add Chat -->
+                <i class="far fa-comment-medical fa-lg"></i>
             </span>
             <span>
                 <!-- Music -->
@@ -41,52 +45,24 @@
                 <i class="far fa-cog fa-lg"></i>
             </span>
         </div>
-
     </header>
-
-    <a id="friends-name-display-link">
-        <i class="fas fa-info-circle fa-1x"></i>
-        Friend's Names Display
-        <i class="far fa-chevron-right fa-xs"></i>
-    </a>
 
     <main class="friends-screen">
         <div class="user-component">
             <div class="user-component__column">
-                <img src="friends_image/man.jpeg"
-                    class="user-component__profile__picuture user-component__profile__picuture--xl">
+                <img src="friends_image/dog.jpeg"
+                    class="user-component__profile__picuture user-component__profile__picuture">
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Owner</h4>
-                    <!-- <h6 class="user-component__subtitle">Subtitle</h4> -->
+                    <h4 class="user-component__title">Dog</h4>
+                    <h6 class="user-component__subtitle">Hey What's Up!?</h4>
                 </div>
             </div>
-            <div class="user-component__column"></div>
-            <div>
-
+            <div class="user-component__column chat_item">
+                <span class="chat_time">21:22</span>
+                <div class="chat_noti">1</div>
             </div>
         </div>
 
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel__header">
-                <span>Channel</span>
-                <i class="far fa-chevron-up fa-xs"></i>
-            </div>
-
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="friends_image/channel.png"
-                        class="user-component__profile__picuture user-component__profile__picuture--sm">
-                    <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title_not_bold">Channel</h4>
-                    </div>
-                </div>
-                <div class="user-component__column">
-                    <span>2</span>
-                    <i class="far fa-chevron-right fa-xs"></i>
-                </div>
-            </div>
-        </div>
-        </div>
     </main>
 
     <nav class="nav">
@@ -100,7 +76,7 @@
             </li>
             <li class="nav__btn">
                 <!-- Chats -->
-                <a class="nav__link" href=chat.html">
+                <a class="nav__link" href="chat.html">
                     <span class="nav__noti">1</span>
                     <!-- <i class="far fa-comment fa-2x"></i> -->
                     <i class="fas fa-comment fa-2x"></i>
