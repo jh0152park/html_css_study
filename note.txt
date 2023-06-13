@@ -11,4 +11,4 @@ POST는 지금 프로젝트에서 사용할 수 없는데, 이유가 백앤드 �
 따라서 보안에 취약해도 되는 정보를 보내야함
 
 2023.06.14
-search icon updated
+search icon updated far to fas
